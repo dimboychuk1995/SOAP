@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    
+    <system systemId="http://erp-bw:8000/sap/bc/srt/wsdl/bndg_E27AAB81625B5EF180E3005056C00008/wsdl11/allinone/standard/document?sap-client=500" uri="document.sap-client_5001.wsdl"/>
+    <system systemId="http://erp-prd:8000/sap/bc/srt/wsdl/bndg_E27B27E4CBAFCBF180E3005056C00008/wsdl11/allinone/standard/document?sap-client=500" uri="document.sap-client_5002.wsdl"/>
+    <system systemId="http://erp-prd:8000/sap/bc/srt/wsdl/bndg_E27B27B1F20843F180E3005056C00008/wsdl11/allinone/standard/document?sap-client=500" uri="document.sap-client_500.wsdl"/>
+    <system systemId="http://erp-prd:8000/sap/bc/srt/wsdl/bndg_E27CCD09FF7CF6F180E3005056C00008/wsdl11/allinone/standard/document?sap-client=500" uri="document.sap-client_5003.wsdl"/>
+</catalog>

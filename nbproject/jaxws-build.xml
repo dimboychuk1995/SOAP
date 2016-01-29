@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-document_sap-client_500_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_1"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/document_sap-client_500_1" destdir="${build.generated.dir}/jax-wsCache/document_sap-client_500_1" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/document_sap-client_500_1/wsdl/erp-prd_8000/sap/bc/srt/wsdl/bndg_E27AAB81625B5EF180E3005056C00008/wsdl11/allinone/standard/document.sap-client_500.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://erp-prd:8000/sap/bc/srt/wsdl/bndg_E27AAB81625B5EF180E3005056C00008/wsdl11/allinone/standard/document?sap-client=500" xnocompile="true" xendorsed="true" package="test1">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/document_sap-client_500_1/wsdl/erp-prd_8000/sap/bc/srt/wsdl/bndg_E27AAB81625B5EF180E3005056C00008/wsdl11/allinone/standard/document.sap-client_500.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-document_sap-client_500_1" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/test1"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_1"/>
+    </target>
+    <target name="wsimport-client-document_sap-client_500_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_2"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/document_sap-client_500_2" destdir="${build.generated.dir}/jax-wsCache/document_sap-client_500_2" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/document_sap-client_500_2/wsdl/erp-prd_8000/sap/bc/srt/wsdl/bndg_E27B27E4CBAFCBF180E3005056C00008/wsdl11/allinone/standard/document.sap-client_500.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://erp-prd:8000/sap/bc/srt/wsdl/bndg_E27B27E4CBAFCBF180E3005056C00008/wsdl11/allinone/standard/document?sap-client=500" xnocompile="true" xendorsed="true" package="test2">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/document_sap-client_500_2/wsdl/erp-prd_8000/sap/bc/srt/wsdl/bndg_E27B27E4CBAFCBF180E3005056C00008/wsdl11/allinone/standard/document.sap-client_500.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-document_sap-client_500_2" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/test2"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_2"/>
+    </target>
+    <target name="wsimport-client-document_sap-client_500_3" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_3"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/document_sap-client_500_3" destdir="${build.generated.dir}/jax-wsCache/document_sap-client_500_3" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/document_sap-client_500_3/wsdl/erp-prd_8000/sap/bc/srt/wsdl/bndg_E27CCD09FF7CF6F180E3005056C00008/wsdl11/allinone/standard/document.sap-client_500.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://erp-prd:8000/sap/bc/srt/wsdl/bndg_E27CCD09FF7CF6F180E3005056C00008/wsdl11/allinone/standard/document?sap-client=500" xnocompile="true" xendorsed="true" package="test3">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/document_sap-client_500_3/wsdl/erp-prd_8000/sap/bc/srt/wsdl/bndg_E27CCD09FF7CF6F180E3005056C00008/wsdl11/allinone/standard/document.sap-client_500.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_3"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_3">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-document_sap-client_500_3" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/test3"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/document_sap-client_500_3"/>
+    </target>
+    <target name="wsimport-client-document_sap-client_500" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/document_sap-client_500"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/document_sap-client_500" destdir="${build.generated.dir}/jax-wsCache/document_sap-client_500" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/document_sap-client_500/wsdl/erp-prd_8000/sap/bc/srt/wsdl/bndg_E27B27B1F20843F180E3005056C00008/wsdl11/allinone/standard/document.sap-client_500.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://erp-prd:8000/sap/bc/srt/wsdl/bndg_E27B27B1F20843F180E3005056C00008/wsdl11/allinone/standard/document?sap-client=500" xnocompile="true" xendorsed="true" package="test">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/document_sap-client_500/wsdl/erp-prd_8000/sap/bc/srt/wsdl/bndg_E27B27B1F20843F180E3005056C00008/wsdl11/allinone/standard/document.sap-client_500.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/document_sap-client_500"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/document_sap-client_500">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-document_sap-client_500" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/test"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/document_sap-client_500"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-document_sap-client_500_1, wsimport-client-document_sap-client_500_2, wsimport-client-document_sap-client_500_3, wsimport-client-document_sap-client_500"/>
+</project>
